@@ -3,193 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushma Chowdary - Portfolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-            flex-wrap: wrap;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            transition: all 0.3s;
-            font-size: 1rem;
-            font-weight: 500;
-        }
-        nav ul li a:hover {
-            color: #007bff;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #007bff;
-        }
-
-        .firstSection {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin: 60px 20px;
-        }
-        .firstSection > div {
-            width: 100%;
-            max-width: 600px;
-        }
-        .leftSection h1 {
-            font-size: 2.5rem;
-            color: #007bff;
-        }
-        .leftSection p {
-            font-size: 1.2rem;
-            color: #555;
-        }
-        .buttons a {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            border-radius: 5px;
-            border: 2px solid #007bff;
-            background-color: #007bff;
-            color: white;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        .buttons a:hover {
-            background-color: white;
-            color: #007bff;
-        }
-        .rightSection img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 50%;
-            border: 5px solid #007bff;
-        }
-
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            text-align: center;
-        }
-        .secondSection h1 {
-            font-size: 1.8rem;
-            color: #333;
-        }
-        main hr {
-            border: 0;
-            background: #007bff;
-            height: 2px;
-            margin: 30px auto;
-            width: 90%;
-        }
-        .box {
-            background: white;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .verticalInfo {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        .expInfo {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        footer {
-            background: #fff;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-            font-size: 1rem;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .footer-links a {
-            color: #007bff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Mutyala Sushma Chowdary | AI Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-        <div class="logo">Sushma Chowdary</div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home" class="logo">Sushma<span class="gradient-text">.</span></a>
         <ul>
-            <li><a href="about-me.html">About Me</a></li>
-            <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="Publications.html">Publications</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            
-            <li><a href="#">Resume</a></li>
-            <li><a href="mailto:ch.sc.u4aie23034@ch.sc.amrita.edu">Get in Touch</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        </nav>        
-    </header>
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                <h1>Hi, I'm Sushma Chowdary</h1>
-                <p>I'm a second-year AI student at Amrita Vishwa Vidyapeetham, passionate about technology and always learning. I enjoy collaborating, solving problems, and staying updated with the latest trends.</p>
-                <div class="buttons">
-                    <a href="#" download>Download CV</a>
-                    <a href="https://github.com/ambersus">GitHub</a>
-                    <a href="https://www.linkedin.com/in/sushma-chowdary-mutyala-170853292/">LinkedIn</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content reveal">
+            <h1>Hi, I'm <br><span class="gradient-text dynamic-text">Sushma Chowdary</span><span class="cursor">|</span></h1>
+            <p>Dedicated Computer Science student focused on building practical and efficient technical solutions. Passionate about creating innovative, reliable, and impactful AI technological solutions.</p>
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="skills-container" style="margin-top: 30px;">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Java</span>
+            </div>
+        </div>
+        <div class="home-image reveal">
+            <!-- Ensure image path matches local or github repo -->
+            <img src="WhatsApp Image 2025-01-20 at 19.26.31_c0d28bff.jpg" alt="Sushma Chowdary">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+        <div class="about-grid">
+            <div class="about-card reveal">
+                <h3>Who am I?</h3>
+                <p>I am focused on building practical and efficient technical solutions. Skilled at working effectively in both team-based and independent environments, supported by a strong foundation in core computing principles and modern AI technologies.</p>
+                <p>I am passionate about creating innovative, reliable, and impactful technological solutions.</p>
+            </div>
+            <div class="about-card reveal" style="transition-delay: 0.2s;">
+                <h3>Core Skills</h3>
+                <p><strong>Languages:</strong> Python, Java, C, SQL, HTML, CSS, JavaScript</p>
+                <p><strong>ML & Data Science:</strong> NumPy, Pandas, Matplotlib, scikit-learn, LangChain, BERT</p>
+                <p><strong>Deep Learning:</strong> PyTorch, YOLO, DeepSort, MediaPipe, OpenCV</p>
+                <p><strong>Tools & Platforms:</strong> GitHub, Jupyter Notebook, Streamlit, Next.js, Flask, Snowflake, Apache Spark, Selenium</p>
+                <p><strong>Databases:</strong> MySQL, MongoDB</p>
+                
+                <div class="skills-container" style="margin-top: 20px;">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">OpenCV</span>
+                    <span class="skill-tag">LangChain</span>
+                    <span class="skill-tag">YOLO</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Next.js</span>
                 </div>
             </div>
-            <div class="rightSection">
-                <img src="https://github.com/ambersus/sushma_portfolio.github.io/blob/main/WhatsApp%20Image%202025-01-20%20at%2019.26.31_c0d28bff.jpg" alt="Profile Picture">
-            </div>
-        </section>
-        <hr>
-        <section class="secondSection">
-            <h1>Work Experience</h1>
-            <div class="box">
-                <div class="verticalInfo">Internship:</div>
-                <div class="expInfo"></div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
-        <div class="footer-links">
-            <a href="contact_form.html">Contact Me</a>
         </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title reveal">My <span class="gradient-text">Education</span></h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <h4>B.Tech, Amrita Vishwa Vidyapeetham</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">08/2023 - 08/2027 | Chennai, India</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <h4>12th, Sri Chaitanya</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">05/2022 - 03/2023 | Hyderabad, India</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <h4>10th, Green Valley High School</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">04/2020 - 03/2021 | Vadodara, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title reveal">Work <span class="gradient-text">Experience</span></h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <h4>Intern, Wipro Technologies</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">04/2026 - 06/2026 | Bengaluru</p>
+                    <ul>
+                        <li>Developed an Agentic AI powered helpdesk assistant leveraging Retrieval Augmented Generation (RAG) architecture to provide accurate company policy and benefits information through natural language interactions.</li>
+                        <li>Automated support tasks and streamlined information retrieval, significantly reducing manual effort and improving overall helpdesk productivity and user experience.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <h4>AI / ML Intern, Blumotiv</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">01/2026 - 04/2026 | Remote</p>
+                    <ul>
+                        <li>Conducted literature review and benchmarking of ML models and methodologies, and developed machine learning models for driver behavior, aggressiveness prediction, and electrified industrial vehicle applications using time-series data.</li>
+                        <li>Designed and implemented virtual/environment digital twin-based prediction models along with control logic for condition monitoring and maintenance decision support.</li>
+                        <li>Contributed to team growth by conducting candidate interviews, assessing team fit, learning potential, and fundamental technical understanding.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="projects-grid">
+            
+            <div class="project-card reveal">
+                <h3><a href="https://github.com/ambersus/ANALYZING-DNA-PATHWAYS-AND-THEIR-IMPACT-ON-CANCER-DEVELOPMENT" target="_blank">Analyzing DNA Pathways</a></h3>
+                <p>Neo4j graph database of 107 cancer genomes visualizing gene interactions using NetworkX, BFS, and DFS for mutation analysis.</p>
+            </div>
+
+            <div class="project-card reveal" style="transition-delay: 0.1s;">
+                <h3><a href="https://github.com/ambersus/Cartoonification" target="_blank">Cartoonification (GANs)</a></h3>
+                <p style="color: var(--primary-color); font-size: 0.85rem; margin-bottom: 10px;">Tech: Python, TensorFlow, Keras, OpenCV</p>
+                <p>Engineered an end-to-end image-to-image translation pipeline using GANs to convert real-world images and videos into high-quality cartoon-style outputs.</p>
+            </div>
+
+            <div class="project-card reveal" style="transition-delay: 0.2s;">
+                <h3><a href="https://github.com/ambersus/croud-movement-prediction" target="_blank">Crowd Movement Prediction</a></h3>
+                <p>Machine learning project focusing on predicting crowd movements and behavior using advanced data analysis techniques.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <h3><a href="https://github.com/ambersus/crowd-analysis" target="_blank">Crowd Analysis</a></h3>
+                <p>Computer vision and data analysis project to understand and analyze crowd dynamics in various environments.</p>
+            </div>
+
+            <div class="project-card reveal" style="transition-delay: 0.1s;">
+                <h3><a href="https://github.com/ambersus/Data_Quality_test" target="_blank">Data Quality Test</a></h3>
+                <p>Implementation of data quality assessment and testing methodologies to ensure robust data pipelines and reliable analytics.</p>
+            </div>
+
+            <div class="project-card reveal" style="transition-delay: 0.2s;">
+                <h3><a href="https://github.com/ambersus/encryption-of-qr-code" target="_blank">Encryption of QR Code</a></h3>
+                <p>A robust encryption approach for QR codes, utilizing matrix-based transformations like LU Decomposition and PCA to secure data.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <h3><a href="https://github.com/ambersus/FACE-AND-VOICE-VERIFICATION-SYSTEM" target="_blank">Face & Voice Verification System</a></h3>
+                <p>Two-step biometric authentication using OpenCV (LBPH face recognition) and SpeechRecognition (voice password) integrated with MySQL.</p>
+            </div>
+
+            <div class="project-card reveal" style="transition-delay: 0.1s;">
+                <h3><a href="https://github.com/ambersus/Indian-Art-Work-Classifier" target="_blank">Indian Art Work Classifier</a></h3>
+                <p>Deep learning model built to classify and recognize various forms of traditional Indian artwork with high accuracy.</p>
+            </div>
+
+            <div class="project-card reveal" style="transition-delay: 0.2s;">
+                <h3><a href="#" target="_blank">Interpretable Machine Learning</a></h3>
+                <p>Exploring techniques and models for interpretable machine learning to enhance explainability and transparency in AI systems.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <h3><a href="https://github.com/ambersus/KTH-action-recognisation" target="_blank">KTH Action Recognition</a></h3>
+                <p style="color: var(--primary-color); font-size: 0.85rem; margin-bottom: 10px;">Tech: MediaPipe Pose, ResNet, LSTM, cv2, YOLO</p>
+                <p>Identifies human actions in video (84% accuracy). Designed an end-to-end pipeline trained on the KTH dataset using YOLOv8, MediaPipe, LSTM & ResNet.</p>
+            </div>
+
+            <div class="project-card reveal" style="transition-delay: 0.1s;">
+                <h3><a href="https://github.com/ambersus/NexaFin-" target="_blank">NexaFin</a></h3>
+                <p>Financial technology project focusing on modern finance solutions, analytics, and intelligent financial modeling.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+        <h2 class="section-title reveal">Research & <span class="gradient-text">Publications</span></h2>
+        
+        <div class="publication-card reveal">
+            <h3><a href="https://ieeexplore.ieee.org/document/11254833" target="_blank">Developing Computational Toxicology Models to Assess the Risk of Environmental Pollutants on Ecosystem Health ↗</a></h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">IEEE Xplore | 12/2025</p>
+            <ul>
+                <li>Evaluated chemical toxicity using machine learning models (SNN, KNN, SVM, RF) to assess environmental risks. Developed a hybrid model achieving 97% prediction accuracy based on molecular structures.</li>
+            </ul>
+        </div>
+
+        <div class="publication-card reveal">
+            <h3><a href="https://ieeexplore.ieee.org/document/10627798" target="_blank">QR code encryption using LU decomposition and PCA ↗</a></h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">IEEE Xplore | 07/2024</p>
+            <ul>
+                <li>A robust encryption approach for QR codes, utilizing matrix-based transformations to secure data. LU Decomposition breaks down data into simpler parts, while PCA reduces dimensionality.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Achievements & Certificates Section -->
+    <section id="achievements">
+        <h2 class="section-title reveal">Achievements & <span class="gradient-text">Certificates</span></h2>
+        
+        <div class="about-grid">
+            <div class="about-card reveal">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">Awards & Honors</h3>
+                <ul style="list-style: none; color: var(--text-muted); padding-left: 0;">
+                    <li style="margin-bottom: 15px;"><strong>Presenter, VEDAS 2026</strong> - Delivered a technical presentation on the international conference in Amrita Vishwa Vidyapeetham.</li>
+                    <li style="margin-bottom: 15px;"><strong>Presenter, IEEE 6th INDICON 2025</strong> - Delivered a technical presentation on the national conference in NIT Rourkela.</li>
+                    <li style="margin-bottom: 15px;"><strong>Best Paper Award</strong> - IConSCEPT 2024 for QR code encryption research.</li>
+                    <li style="margin-bottom: 15px;"><strong>2nd Runner-up</strong> - National Hackathon by Pathway, Led 3-membered team.</li>
+                    <li style="margin-bottom: 15px;"><strong>1st Runner-up</strong> - FiseCode 2025 by neuronix.</li>
+                </ul>
+            </div>
+
+            <div class="about-card reveal" style="transition-delay: 0.2s;">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">Certificates</h3>
+                <ul style="list-style: none; color: var(--text-muted); padding-left: 0;">
+                    <li style="margin-bottom: 15px; background: rgba(56, 189, 248, 0.05); padding: 15px; border-radius: 8px; border: 1px solid rgba(56, 189, 248, 0.2);">
+                        <strong>Supervised Machine Learning: Regression and Classification</strong><br>
+                        <span style="font-size: 0.9rem;">Coursera</span>
+                    </li>
+                    <li style="margin-bottom: 15px; background: rgba(56, 189, 248, 0.05); padding: 15px; border-radius: 8px; border: 1px solid rgba(56, 189, 248, 0.2);">
+                        <strong>Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI</strong><br>
+                        <span style="font-size: 0.9rem;">IBM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title reveal">Get in <span class="gradient-text">Touch</span></h2>
+        <div class="contact-container reveal">
+            <p style="text-align: center; margin-bottom: 30px; color: var(--text-muted);">
+                Feel free to reach out to me directly at <strong><a href="mailto:sushmachowdarymutyala@gmail.com" style="color: var(--primary-color);">sushmachowdarymutyala@gmail.com</a></strong> or by using the form below.
+            </p>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="76dfe743-ed76-489c-a825-221d19de13ea">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Mutyala Sushma Chowdary Portfolio. All Rights Reserved. <br>
+           <a href="https://github.com/ambersus">GitHub</a> | <a href="https://www.linkedin.com/in/sushma-chowdary-mutyala-170853292/">LinkedIn</a> | Phone: +91 7016984165
+        </p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
