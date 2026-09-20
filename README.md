@@ -1,6 +1,4 @@
-# Sushma Chowdary | AI & ML Portfolio
-
-Welcome to my personal portfolio repository! 
+# Welcome to my personal portfolio repo! 
 
 To view my projects, research publications, and professional experience, please visit my live website:
 
